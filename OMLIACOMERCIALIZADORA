@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMLIA Servicios Integrales - Comercialización, Consultoría y Logística</title>
+    <meta name="description" content="OMLIA Servicios Integrales es tu socio estratégico en comercialización, consultoría y logística. Conectamos oportunidades y ofrecemos resultados excepcionales.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            DEFAULT: 'hsl(217, 91%, 50%)',
+                            foreground: 'hsl(217, 91%, 98%)',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
+        <div class="container mx-auto px-6 md:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-3">
+                    <img src="https://i.ibb.co/4RQZxQzK/logo-omlia.png" alt="OMLIA Logo" class="h-14 object-contain">
+                    <h1 class="text-xl md:text-2xl font-bold">OMLIA Servicios Integrales</h1>
+                </div>
+                <nav class="hidden md:flex items-center gap-2">
+                    <a href="#services" class="px-4 py-2 rounded-md hover:bg-gray-100 transition-colors">Servicios</a>
+                    <a href="#about" class="px-4 py-2 rounded-md hover:bg-gray-100 transition-colors">Nosotros</a>
+                    <a href="#contact" class="px-4 py-2 rounded-md hover:bg-gray-100 transition-colors">Contacto</a>
+                </nav>
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-md hover:bg-gray-100">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden py-4 border-t">
+                <nav class="flex flex-col gap-2">
+                    <a href="#services" class="px-4 py-2 rounded-md hover:bg-gray-100">Servicios</a>
+                    <a href="#about" class="px-4 py-2 rounded-md hover:bg-gray-100">Nosotros</a>
+                    <a href="#contact" class="px-4 py-2 rounded-md hover:bg-gray-100">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0" style="background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80') center/cover no-repeat;"></div>
+        <div class="container relative z-10 mx-auto px-6 md:px-8 py-24 text-center">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">¡Bienvenido a OMLIA Servicios Integrales!</h2>
+            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-white/90">Tu socio estratégico en comercialización, consultoría y logística. Conectamos oportunidades y ofrecemos resultados excepcionales para nuestros clientes.</p>
+            <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold text-base md:text-lg px-8 py-4 rounded-full transition-colors">Contáctanos</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 bg-gray-100/50">
+        <div class="container mx-auto px-6 md:px-8">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-12">Nuestros Servicios</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80" alt="Comercialización" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl md:text-2xl font-semibold mb-3">Comercialización</h4>
+                        <p class="text-gray-600">Facilitamos la compra y venta de productos a nivel nacional e internacional, optimizando la cadena de suministro.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80" alt="Consultoría" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl md:text-2xl font-semibold mb-3">Consultoría</h4>
+                        <p class="text-gray-600">Ofrecemos asesoramiento experto para mejorar tus procesos comerciales y expandir tu alcance de mercado.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=600&q=80" alt="Logística" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl md:text-2xl font-semibold mb-3">Logística Integral</h4>
+                        <p class="text-gray-600">Gestionamos el transporte, almacenamiento y distribución de tus mercancías de forma eficiente y segura.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24">
+        <div class="container mx-auto px-6 md:px-8">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-8">Sobre Nosotros</h3>
+            <p class="max-w-3xl mx-auto text-base md:text-lg text-center text-gray-600 leading-relaxed">En OMLIA Servicios Integrales, somos un equipo de profesionales apasionados por crear conexiones comerciales valiosas. Nuestra misión es ser el puente que une a productores y consumidores, garantizando siempre la máxima calidad y satisfacción.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-gray-100/50">
+        <div class="container mx-auto px-6 md:px-8">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-12">Ponte en Contacto</h3>
+            <div class="max-w-2xl mx-auto bg-white rounded-lg border border-gray-200 overflow-hidden">
+                <div class="p-6 border-b border-gray-200">
+                    <h4 class="text-xl font-semibold">Envíanos un mensaje</h4>
+                </div>
+                <div class="p-6">
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium mb-2">Nombre</label>
+                            <input type="text" id="name" name="name" required placeholder="Tu nombre" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium mb-2">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium mb-2">Mensaje</label>
+                            <textarea id="message" name="message" required rows="4" placeholder="Tu mensaje" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition-colors">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200">
+        <div class="container mx-auto px-6 md:px-8 py-8">
+            <p class="text-center text-gray-600">© 2024 OMLIA Servicios Integrales. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            if (name && email && message) {
+                alert('¡Mensaje enviado! Gracias por contactarnos, ' + name + '. Nos pondremos en contacto contigo pronto.');
+                this.reset();
+            }
+        });
+    </script>
+</body>
+</html>
